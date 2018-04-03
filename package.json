@@ -1,0 +1,20 @@
+{
+  "name": "ziorobo.co",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@types/react-helmet": "^5.0.5",
+    "gatsby": "^1.9.241",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-typescript": "^1.4.19",
+    "react-helmet": "^5.2.0",
+    "typescript": "^2.8.1"
+  }
+}
