@@ -4,17 +4,22 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "stack-create": "ts-node aws/stack-create",
+    "stack-update": "ts-node aws/stack-update",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "dev": "gatsby develop"
   },
   "dependencies": {
+    "@types/node": "^9.6.5",
     "@types/react-helmet": "^5.0.5",
+    "aws-sdk": "^2.224.1",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-typescript": "^1.4.19",
     "react-helmet": "^5.2.0",
+    "ts-node": "^5.0.1",
     "typescript": "^2.8.1"
   }
 }
