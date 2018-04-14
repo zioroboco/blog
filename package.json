@@ -4,9 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "dev": "gatsby develop"
   },
   "dependencies": {
     "@types/react-helmet": "^5.0.5",
