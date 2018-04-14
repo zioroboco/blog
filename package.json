@@ -6,6 +6,8 @@
   "scripts": {
     "stack-create": "ts-node aws/stack-create",
     "stack-update": "ts-node aws/stack-update",
+    "bucket-deploy": "s3-deploy './public/**' --cwd './public/' --bucket 'ziorobo.co' --deleteRemoved --gzip",
+    "deploy": "yarn build --prefix-paths && yarn bucket-deploy",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "dev": "gatsby develop"
@@ -19,6 +21,7 @@
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-typescript": "^1.4.19",
     "react-helmet": "^5.2.0",
+    "s3-deploy": "^0.10.0",
     "ts-node": "^5.0.1",
     "typescript": "^2.8.1"
   }
