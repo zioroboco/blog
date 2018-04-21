@@ -4,18 +4,22 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "stack-create": "ts-node aws/stack-create",
-    "stack-update": "ts-node aws/stack-update",
-    "bucket-deploy": "s3-deploy './public/**' --cwd './public/' --bucket 'ziorobo.co' --deleteRemoved --gzip",
+    "ts-node": "ts-node --require dotenv/config",
+    "stack-create": "yarn ts-node aws/stack-create",
+    "stack-update": "yarn ts-node aws/stack-update",
+    "bucket-deploy":
+      "s3-deploy './public/**' --cwd './public/' --bucket 'ziorobo.co' --deleteRemoved --gzip",
     "deploy": "yarn build --prefix-paths && yarn bucket-deploy",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "dev": "gatsby develop"
   },
   "dependencies": {
+    "@types/dotenv": "^4.0.3",
     "@types/node": "^9.6.5",
     "@types/react-helmet": "^5.0.5",
     "aws-sdk": "^2.224.1",
+    "dotenv": "^5.0.1",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
