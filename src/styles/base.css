@@ -13,3 +13,7 @@
 #header:hover {
   cursor: default;
 }
+
+a:hover {
+  color: crimson;
+}

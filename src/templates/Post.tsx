@@ -5,15 +5,12 @@ export default ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="post-container">
-      <div className="post">
+    <div>
+      <div>
         <h1>{frontmatter.title}</h1>
-        <div
-          className="post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-      <p>Posted {frontmatter.date}</p>
+      <small>{frontmatter.date}</small>
     </div>
   )
 }
