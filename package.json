@@ -7,8 +7,7 @@
     "ts-node": "ts-node --require dotenv/config",
     "stack-create": "yarn ts-node aws/stack-create",
     "stack-update": "yarn ts-node aws/stack-update",
-    "bucket-deploy":
-      "s3-deploy './public/**' --cwd './public/' --bucket 'ziorobo.co' --deleteRemoved --gzip",
+    "bucket-deploy": "s3-deploy './public/**' --cwd './public/' --bucket 'ziorobo.co' --deleteRemoved --gzip",
     "deploy": "yarn build --prefix-paths && yarn bucket-deploy",
     "build": "gatsby build",
     "serve": "gatsby serve",

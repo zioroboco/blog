@@ -3,9 +3,7 @@ import Helmet from "react-helmet"
 
 export default ({ children }) => (
   <div>
-    <Helmet
-      title="ziorobo.co"
-    />
+    <Helmet title="ziorobo.co" />
     {children()}
   </div>
 )
