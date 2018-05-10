@@ -9,7 +9,6 @@ Parameters:
     Type: String
 
 Resources:
-
   WebsiteBucket:
     Type: AWS::S3::Bucket
     Properties:
@@ -19,7 +18,6 @@ Resources:
         IndexDocument: index.html
         ErrorDocument: 404.html
     DeletionPolicy: Delete
-
   WebsiteBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
@@ -31,7 +29,6 @@ Resources:
           Principal: '*'
           Action: s3:GetObject
           Resource: !Join ['', ['arn:aws:s3:::', !Ref 'WebsiteBucket', /*]]
-
   WebsiteCloudfront:
     Type: AWS::CloudFront::Distribution
     DependsOn:
@@ -65,7 +62,6 @@ Resources:
         ViewerCertificate:
           AcmCertificateArn: !Ref AcmCertificateArn
           SslSupportMethod: sni-only
-
   WebsiteDNSName:
     Type: AWS::Route53::RecordSetGroup
     Properties:

@@ -15,10 +15,10 @@ const params: CloudFormation.Parameter[] = [
 ]
 
 new CloudFormation()
-  .updateStack({
-    TemplateBody: readFileSync("aws/template.yaml").toString(),
+  .createStack({
+    TemplateBody: readFileSync("stack/template.yaml").toString(),
     StackName: STACK_NAME,
     Parameters: params
   })
   .promise()
-  .then(response => console.log(`Stack updated with id=${response.StackId}`))
+  .then(response => console.log(`Stack created with id=${response.StackId}`))
