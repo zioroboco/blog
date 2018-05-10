@@ -6,7 +6,7 @@
   "scripts": {
     "stack-create": "dotenv ts-node stack/scripts/create",
     "stack-update": "dotenv ts-node stack/scripts/update",
-    "bucket-deploy": "dotenv s3-deploy './public/**' --cwd './public/' --bucket 'ziorobo.co' --deleteRemoved --gzip",
+    "bucket-deploy": "s3-deploy './public/**' --cwd './public/' --bucket 'ziorobo.co' --deleteRemoved --gzip",
     "deploy": "yarn build --prefix-paths && yarn bucket-deploy",
     "build": "gatsby build",
     "serve": "gatsby serve",
