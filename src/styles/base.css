@@ -9,6 +9,7 @@
   font-weight: 400;
   font-size: 4em;
   user-select: none;
+  white-space: nowrap;
 }
 
 #header:hover {
