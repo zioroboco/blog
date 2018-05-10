@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     {
       resolve: "gatsby-plugin-typography",
-      options: { pathToConfigModule: "src/styles/typography.js" }
+      options: { pathToConfigModule: "src/styles/typography.ts" }
     },
     {
       resolve: "gatsby-source-filesystem",
