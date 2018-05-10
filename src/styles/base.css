@@ -1,0 +1,15 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#header {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 4em;
+  user-select: none;
+}
+
+#header:hover {
+  cursor: default;
+}
