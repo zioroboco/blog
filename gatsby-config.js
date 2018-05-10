@@ -4,6 +4,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["Montserrat Alternates:400"]
+      }
+    },
+    {
       resolve: "gatsby-plugin-typography",
       options: { pathToConfigModule: "src/styles/typography.ts" }
     },
