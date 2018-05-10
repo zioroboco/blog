@@ -11,7 +11,18 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: { name: "content", path: "content" }
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: { maxWidth: 590 }
+          }
+        ]
+      }
+    },
+    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript"
   ]
