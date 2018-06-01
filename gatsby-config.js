@@ -15,7 +15,7 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-filesystem",
-      options: { name: "content", path: "content" }
+      options: { name: "content", path: "content/publish" }
     },
     {
       resolve: "gatsby-transformer-remark",
