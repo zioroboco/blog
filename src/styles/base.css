@@ -48,6 +48,16 @@ a:hover {
   padding-top: 1.5rem;
 }
 
+#footer {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+#footer img {
+  width: 1.5em;
+  height: auto;
+}
+
 code {
   font-size: 0.65rem !important;
   font-family: "Fira Code", Consolas, Monaco, monospace !important;

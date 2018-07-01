@@ -15,5 +15,10 @@ export default ({ children }) => (
       <Textfit mode="single">{`ziorobo.co`}</Textfit>
     </div>
     {children()}
+    <div id="footer">
+      <a href="https://github.com/zioroboco">
+        <img src={require("../static/images/GitHub-Mark-64px.png")} />
+      </a>
+    </div>
   </div>
 )
